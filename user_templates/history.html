@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% if purchased_products %}
+<h1>Purchase's History</h1>
+<table class="show-products">
+    <tr>
+        <th>Date</th>
+        <th>Hour</th>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Amount</th>
+        <th>Total</th>
+    </tr>
+    {% for product in purchased_products %}
+    <tr>
+        <th>{{ product.date }}</th>
+        <th>{{ product.hour }}</th>
+        <th>{{ product.name }}</th>
+        <th>{{ product.price }}</th>
+        <th>{{ product.amount }}</th>
+        <th>{{ product.total }}</th>
+    </tr>
+    {% endfor %}
+</table>
+
+
+{% else %}
+<h2 class="message-middle">You do not have any Purchased History, please go to <a href="{{ url_for('users.purchase') }}">Purchase</a> and buy something.</h2>
+{% endif %}
+
+</br><a href="{{ url_for('users.main') }}">Main Page</a></br>
+
+{% endblock %}

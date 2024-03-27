@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<a href="{{ url_for('users.catalog') }}">Catalog</a></br>
+<a href="{{ url_for('users.purchase') }}">Purchase</a></br>
+<a href="{{ url_for('users.history') }}">History</a></br>
+<a href="{{ url_for('users.logout') }}">Logout</a></br>
+<a href="{{ url_for('users.delete') }}">Delete Account</a>
+{% endblock %}

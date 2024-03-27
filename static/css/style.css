@@ -1,0 +1,180 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #ffeecc;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px 0;
+}
+
+footer {
+    background-color: #ffeecc;
+    padding: 10px 0;
+}
+p.footer {
+    text-align: center;
+    color: #6d4c41;
+}
+
+a {
+    color: #6d4c41; /* Default link color */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+a:hover {
+    color: #795548; /* Color on hover */
+    outline: none; /* Remove default focus outline */
+}
+
+a:visited {
+    color: #795548; /* Color for visited links */
+}
+
+.image-container {
+    text-align: center;
+    width: 100%; /* Largura desejada */
+    overflow: hidden; /* Para cortar qualquer parte da imagem que exceda as dimensões especificadas */
+}
+  
+.image-container img {
+    width: 300px; /* Para preencher o contêiner */
+    margin-right: 20px;
+    margin-bottom: 20px;
+    height: 200px; /* Para manter a proporção da imagem */
+    display: inline-block; /* Para garantir que as imagens fiquem uma abaixo da outra */
+    transition: filter 0.3s ease;  
+}
+a.image-link img:hover {
+    filter: brightness(70%);
+}
+
+.product-history{
+    font-family: Arial, sans-serif; /* Fonte padrão */
+  }
+  
+  h1 {
+    color: #6d4c41;
+    font-size: 32px; /* Tamanho do título */
+    text-align: center; /* Alinhamento do texto */
+  }
+  h2 {
+    margin-top: 50px;
+    color: #666666;
+    font-size: 20px; /* Tamanho do título */
+    text-align: left; /* Alinhamento do texto */
+  }
+  
+  p {
+    color: #666666; /* Cor do parágrafo */
+    text-align: justify;
+    font-size: 18px; /* Tamanho do parágrafo */
+    line-height: 1.6; /* Espaçamento entre linhas */
+  }
+
+.about-us {
+    margin-left: 25%;
+    width: 50%;
+}
+
+.forms {
+    margin-left: 25%;
+    width: 50%;
+}
+input, textarea, button {
+    width: 100%; /* Ocupa toda a largura disponível */
+    padding: 10px; /* Espaçamento interno */
+    margin-top: 8px; /* Margem superior */
+    margin-bottom: 20px; /* Margem inferior */
+    border: 1px solid #ccc; /* Borda com cor cinza */
+    border-radius: 4px; /* Borda arredondada */
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+textarea:focus, input:focus {
+    outline: none; /* Remove a borda de foco padrão */
+    border-color: #666666; /* Altera a cor da borda quando focado */
+    box-shadow: 0 0 5px rgba(109, 76, 65, 0.5); /* Adiciona uma sombra suave quando focado */
+}
+button:hover {
+    background-color: #ffeecc; /* Darker shade of blue on hover */
+}
+.user-form {
+    margin-left: 32.5%;
+    width: 35%;
+}
+
+.flash-message {
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #f2dede; /* Red background for error messages */
+    color: #9d1613; /* Dark red text color */
+}
+
+.products-purchase {
+    margin-left: 38%;
+    width: 27%;
+}
+
+.input-purchase {
+    margin-left: 50px;
+    width: 50px;
+}
+.label-purchase {
+    display: inline-block;   
+    width: 150px;
+}
+.message-middle {
+    text-align: center;
+    padding-bottom: 50px;
+}
+.show-products {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #6d4c41;
+}
+th, td {
+    border: 1px solid #6D4C41; /* Cor da borda das células */
+    padding: 12px; /* Espaçamento interno das células */
+    text-align: left;
+}
+th {
+    color: 6D4C41;
+}
+tr:nth-child(odd) {
+    background-color: #FFEECC;
+}
+tr:hover {
+    background-color: #FFD699;
+}

@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Ghost's Catalog</h1>
+<table class="show-products">
+    
+    <tr>
+        <th>Product Name</th>
+        <th>Price</th>
+    </tr>
+    <tr>
+        <th>Croissant</th>
+        <th>€ 3.00</th>
+    </tr>
+    <tr>
+        <th>Danish</th>
+        <th>€ 2.50</th>
+    </tr>
+    <tr>
+        <th>Croissandwich</th>
+        <th>€ 3.50</th>
+    </tr>
+    <tr>
+        <th>Pain au Chocolat</th>
+        <th>€ 3.00</th>
+    </tr>
+    <tr>
+        <th>Chocolate Swiss</th>
+        <th>€ 4.00</th>
+    </tr>
+    <tr>
+        <th>Sausage Roll</th>
+        <th>€ 3.50</th>
+    </tr>
+
+</table>
+
+</br><a href="{{ url_for('users.main') }}">Main Page</a></br>
+
+
+{% endblock %}

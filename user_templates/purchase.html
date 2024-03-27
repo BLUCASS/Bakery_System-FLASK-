@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Purchase Products</h1>
+<div class="products-purchase">
+    
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="flash-message">
+                {{ messages[0] }}
+            </div>
+        {% endif %}
+    {% endwith %}
+
+    <form method="post" action="{{ url_for('users.purchase') }}">
+        <label class="label-purchase" for="croissant">Croissant</label>
+        € 3.00
+        <input class="input-purchase" type="number" id="croissant" name="croissant" value="0" min="0">
+        </br>
+        <label class="label-purchase" for="danish">Danish</label>
+        € 2.50
+        <input class="input-purchase" type="number" id="danish" name="danish" value="0" min="0">
+        </br>
+        <label class="label-purchase" for="croissandwich">Croissandwich</label>
+        € 3.50
+        <input class="input-purchase" type="number" id="croissandwich" name="croissandwich" value="0"  min="0">
+        </br>
+        <label class="label-purchase" for="pain">Pain au Chocolat</label>
+        € 3.00
+        <input class="input-purchase" type="number" id="pain" name="pain" value="0" min="0">
+        </br>
+        <label class="label-purchase" for="choc_swiss">Chocolate Swiss</label>
+        € 4.00
+        <input class="input-purchase" type="number" id="choc_swiss" name="choc_swiss" value="0" min="0">
+        </br>
+        <label class="label-purchase" for="sausage">Sausage Roll</label>
+        € 3.50
+        <input class="input-purchase" type="number" id="sausage" name="sausage" value="0" min="0">
+        </br>
+        <button type="submit">Submit</button>
+    </form>
+
+</br><a href="{{ url_for('users.main') }}">Main Page</a></br>
+
+</div>
+
+
+{% endblock %}

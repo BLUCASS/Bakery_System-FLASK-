@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="user-form">
+    <h1>Delete Account</h1>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="flash-message">
+                    {{ messages[0] }}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        <form action="{{ url_for('users.delete') }}" method="post">
+
+            <div class="form-fields">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-fields">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm_password" required>
+            </div>
+            <div class="form-fields">
+                <button type="submit" value="Enviar">Submit</button>
+            </div>
+    
+        </form>
+    <a href="{{ url_for('users.main') }}">Main Page</a></br>
+</div>
+{% endblock %}

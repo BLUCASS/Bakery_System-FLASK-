@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Our Products Catalog</h1>
+<h2>Click on the images for more information.</h2>
+<div class="image-container">
+    <a class="image-link" href="{{ url_for('croissant') }}">
+        <img src="/static/img/plain_croissant.webp" alt="Plain Croissant">
+    </a>
+    <a class="image-link" href="{{ url_for('croissandwich') }}">
+        <img src="/static/img/croissandwich.avif">
+    </a>
+    <a class="image-link" href="{{ url_for('danish') }}">
+        <img src="/static/img/danish.webp">
+    </a>
+    <a class="image-link" href="{{ url_for('pain') }}">
+        <img src="/static/img/pain_au_choc.webp">
+    </a>
+    <a class="image-link" href="{{ url_for('choc_swiss') }}">
+        <img src="/static/img/choc_swiss.jfif">
+    </a>
+    <a class="image-link" href="{{ url_for('sausage') }}">
+        <img src="/static/img/sausage_roll.jpg">
+    </a>
+</div>
+
+{% endblock %}
