@@ -12,7 +12,7 @@ savory sausage rolls, we've got something for every palate.</p>
 3. Technical Stack
 4. Requirements
 5. Getting Started
-6. Usage
+6. How to Use
 7. How to Contribute
 8. Getting Started with Contributions
 9. Screenshots
@@ -64,12 +64,12 @@ pip install -r requirements.txt
 ``` bash
 python app.py
 ```
-4. Navigate to the specified URL:
+5. Navigate to the specified URL:
 ```bash
 http://localhost:5000/
 ```
 
-### ⏯️ USAGE
+### ⏯️ HOW TO USE
 1. To create an account go to:
 ``` bash
 http://127.0.0.1:5000/user/signup
