@@ -14,7 +14,8 @@ savory sausage rolls, we've got something for every palate.</p>
 5. Getting Started
 6. Usage
 7. How to Contribute
-8. Screenshots
+8. Getting Started with Contributions
+9. Screenshots
 
 ### 🔑 KEY FEATURES
 <p align="justify"> User Authentication: Create an account to access the bakery 
